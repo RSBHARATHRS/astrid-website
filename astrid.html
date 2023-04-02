@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Astrid</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container">
+      <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey"
+        title="close menu">
+        <i class="fa fa-remove"></i>
+      </a>
+      <img src="./images/icons/speech-icon.png" style="width:45%;" class="w3-round"><br><br>
+      <h4><b>Astrid</b></h4>
+      <p class="w3-text-grey">Accurate Speech to Text Recognition Intelligent Device</p>
+    </div>
+    <hr>
+    <div class="w3-bar-block">
+      <a href="#portfolio" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
+          class="fa fa-th-large fa-fw w3-margin-right"></i>Introduction</a>
+      <a href="#insatll" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Basic
+        Installations</a>
+      <a href="#about" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-user fa-fw w3-margin-right"></i>Features</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-padding"><i
+          class="fa fa-envelope fa-fw w3-margin-right"></i>Contact us</a>
+    </div>
+  </nav>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="main-cnt" style="margin-left:300px">
+
+    <!-- Header -->
+    <header id="portfolio">
+      <a href="#"><img src="" style="width:65px;"
+          class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey"><i class="fa fa-bars"></i></span>
+      <div class="w3-container">
+        <h1><b>Astrid</b></h1>
+        <div class="w3-section w3-bottombar w3-padding-16">Accurate Speech to Text Recognition Intelligent Device
+        </div>
+      </div>
+    </header>
+
+    <!-- First Photo Grid-->
+    <div class="w3-row-padding">
+
+      <h2>Introduction</h2>
+      <p> The transcriptive model helps to recognize human voice command as input and convert it to text. With
+        the help of Astrid, we can able to fill out the forms containing different types of input fields. People who
+        try to register with our platform once they log in, just answer the questions available on our registration form
+        orally, Our recognition model will convert speech to text without any time delay. The model provides the feature
+        to select the options that are available on the different types of fields without any click. Our recognition
+        model will work flexibly to provide good outcomes in a more efficient manner.
+      </p>
+
+    </div>
+
+    <!-- Installation -->
+    <div class="w3-row-padding" id="insatll">
+      <h2>Basic Installations</h2>
+      <p>We set the spoken language for the speech recognizer "lang" to the BCP-47 value that the user has selected via
+        the selection drop-down list, for example “en-US” for English-United States. If this is not set, it defaults to
+        the lang of the HTML document root element and hierarchy. Chrome speech recognition supports numerous languages
+        (see the “langs” table in the demo source), as well as some right-to-left languages that are not included in
+        this demo, such as he-IL and ar-EG.
+
+        After setting the language, we call recognition.start() to activate the speech recognizer. Once it begins
+        capturing audio, it calls the onstart event handler, and then for each new set of results, it calls the onresult
+        event handler.
+      </p>
+
+      <div class="ins-steps">
+        <div class="step-1">
+          <h4>Step: 1</h4>
+          <code>
+          <pre>
+            @NgModule({
+              ...
+              schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+            })
+            </pre>
+          </code>
+        </div>
+
+        <div class="step-2">
+          <h4>Step: 2</h4>
+          <p>Then you need to insert astrid-web.js inside your html body,</p>
+          <code>
+            <pre>
+              &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
+            </pre>
+          </code>
+        </div>
+
+        <div class="step-3">
+          <h4>Step: 3</h4>
+          <p>and then you need to put below tag to the page where you want to show your astrird.</p>
+          <code>
+            <pre>
+              &lt;astrid>&lt;/astrid>
+            </pre>
+          </code>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pagination -->
+    <div class="w3-center w3-padding-32">
+      <div class="w3-bar">
+      </div>
+    </div>
+
+    <!-- Images of Me -->
+    <!-- <div class="w3-row-padding w3-padding-16 img-cnt" id="about">
+      <div class="w3-col m6">
+        <img class="icons" src="./images/icons/speech-icon.png" alt="Me">
+      </div>
+      <div class="w3-col m6">
+        <img class="icons" src="./images/icons/rec.png" alt="Me">
+      </div>
+    </div> -->
+
+    <div class="w3-row-padding" id="feature">
+      <h2>Features</h2>
+      <di class="img-cnt">
+        <img src="./images/features.JPG" alt="">
+      </di>
+    </div>
+
+
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+      <h4><b>About Me</b></h4>
+      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
+        ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
+        Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt
+        sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
+        fringilla.</p>
+      <hr>
+
+      <h4>Technical Skills</h4>
+      <!-- Progress bars / Skills -->
+      <p>Speech</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
+      </div>
+      <p>Design</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
+      </div>
+      <p>Usage</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
+      </div>
+      <p>
+
+      </p>
+      <hr>
+
+      <h4>How to use</h4>
+      <div class="main">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/speech-icon.png"
+                  alt="A side view of a plate of figs and berries. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Testing tool</h2>
+                <div class="card_text">
+                  <p><span class="note">Seasonal.</span></p>
+                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
+                    refreshing, shareable dessert.</p>
+                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/rec.png"
+                  alt="A side view of a plate of figs and berries. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Testing tool</h2>
+                <div class="card_text">
+                  <p><span class="note">Seasonal.</span></p>
+                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
+                    refreshing, shareable dessert.</p>
+                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/play.png" alt="mixed vegetable salad in a mason jar. ">
+              </div>
+              <div class="card_content">
+                <h2 class="card_title">Play</h2>
+                <div class="card_text">
+                  <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens
+                    and seasonal vegetables, fresh from the farmer's market.</p>
+                  <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic vinaigrette,
+                    creamy chipotle, avocado green goddess, or honey mustard. Add your choice of protein for $2 more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/stop.png" alt="a Reuben sandwich on wax paper. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Stop</h2>
+                <div class="card_text">
+                  <p> </p>
+                  <p>Every element of this </p>
+                  <p></p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/microphone.png"
+                  alt="A side view of a plate of figs and berries. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Testing tool</h2>
+                <div class="card_text">
+                  <p><span class="note">Seasonal.</span></p>
+                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
+                    refreshing, shareable dessert.</p>
+                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/setting.png"
+                  alt="A side view of a plate of figs and berries. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Testing tool</h2>
+                <div class="card_text">
+                  <p><span class="note">Seasonal.</span></p>
+                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
+                    refreshing, shareable dessert.</p>
+                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="./images/icons/info.png"
+                  alt="A side view of a plate of figs and berries. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Testing tool</h2>
+                <div class="card_text">
+                  <p><span class="note">Seasonal.</span></p>
+                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
+                    refreshing, shareable dessert.</p>
+                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="w3-container w3-padding-large w3-grey">
+      <h4 id="contact"><b>Contact us</b></h4>
+      <hr class="w3-opacity">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-section">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-section">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-section">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-button w3-black w3-margin-bottom"><i
+            class="fa fa-paper-plane w3-margin-right"></i>Send Message</button>
+      </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-dark-grey">
+      <div class="w3-row-padding">
+        <h3>Whatuni incendio</h3>
+        <hr>
+        <div class="w3-third">
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+            gravida diam non fringilla.</p>
+        </div>
+
+        <div class="w3-third">
+          <ul class="w3-ul w3-hoverable">
+            <li class="w3-padding-16">
+              <img src="" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Lorem</span><br>
+              <span>Sed mattis nunc</span>
+            </li>
+            <li class="w3-padding-16">
+              <img src="" class="w3-left w3-margin-right" style="width:50px">
+              <span class="w3-large">Ipsum</span><br>
+              <span>Praes tinci sed</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="w3-third">
+          <p>
+            <span class="w3-tag w3-grey w3-margin-bottom">Tamilarasan M</span>
+            <span class="w3-tag w3-grey w3-margin-bottom">Vignesh Kumar K</span>
+            <span class="w3-tag w3-grey w3-margin-bottom">Seelam Rajesh D</span>
+            <span class="w3-tag w3-grey w3-margin-bottom">Suriya Priya J</span>
+            <span class="w3-tag w3-grey w3-margin-bottom">Kamalnaath S</span>
+            <span class="w3-tag w3-grey w3-margin-bottom">Bharath R</span>
+          </p>
+        </div>
+
+      </div>
+    </footer>
+    <!-- 
+    <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.whatuni.com/" title="W3.CSS"
+        target="_blank" class="w3-hover-opacity">Whatuni</a>
+    </div> -->
+
+    <!-- End page content -->
+  </div>
+
+  <script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+  </script>
+
+</body>
+
+</html>
