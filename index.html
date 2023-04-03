@@ -27,18 +27,20 @@
     <div class="w3-bar-block">
       <a href="#portfolio" class="w3-bar-item w3-button w3-padding w3-text-teal"><i
           class="fa fa-th-large fa-fw w3-margin-right"></i>Introduction</a>
-      <a href="#insatll" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Basic
-        Installations</a>
-      <a href="#about" class="w3-bar-item w3-button w3-padding"><i
+      <a href="#features" class="w3-bar-item w3-button w3-padding"><i
           class="fa fa-user fa-fw w3-margin-right"></i>Features</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding"><i
+      <a href="#installation" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>Basic
+        Installations</a>
+      <a href="#controls" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>
+        Controls</a>
+      <a href="#contactus" class="w3-bar-item w3-button w3-padding"><i
           class="fa fa-envelope fa-fw w3-margin-right"></i>Contact us</a>
     </div>
   </nav>
 
   <!-- Overlay effect when opening sidebar on small screens -->
   <div class="w3-overlay w3-hide-large w3-animate-opacity" style="cursor:pointer" title="close side menu"
-    id="myOverlay" ></div>
+    id="myOverlay"></div>
 
   <!-- !PAGE CONTENT! -->
   <div class="main-cnt">
@@ -47,7 +49,8 @@
     <header id="portfolio">
       <a href="#"><img src="" style="width:65px;"
           class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
-      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="openNav()"><i class="fa fa-bars"></i></span>
+      <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="openNav()"><i
+          class="fa fa-bars"></i></span>
       <div class="w3-container">
         <h1><b>Astrid</b></h1>
         <div class="w3-section w3-bottombar w3-padding-16">Accurate Speech to Text Recognition Intelligent Device
@@ -55,9 +58,8 @@
       </div>
     </header>
 
-    <!-- First Photo Grid-->
+    <!-- Introduction -->
     <div class="w3-row-padding">
-
       <h2>Introduction</h2>
       <p> The transcriptive model helps to recognize human voice command as input and convert it to text. With
         the help of Astrid, we can able to fill out the forms containing different types of input fields. People who
@@ -66,11 +68,20 @@
         to select the options that are available on the different types of fields without any click. Our recognition
         model will work flexibly to provide good outcomes in a more efficient manner.
       </p>
+    </div>
 
+
+
+    <!-- Features -->
+    <div class="w3-row-padding" id="features">
+      <h2>Features</h2>
+      <div class="feature-img-cnt">
+        <img src="./images/features.JPG" alt="">
+      </div>
     </div>
 
     <!-- Installation -->
-    <div class="w3-row-padding" id="insatll">
+    <div class="w3-row-padding" id="installation">
       <h2>Basic Installations</h2>
       <p>We set the spoken language for the speech recognizer "lang" to the BCP-47 value that the user has selected via
         the selection drop-down list, for example “en-US” for English-United States. If this is not set, it defaults to
@@ -87,204 +98,132 @@
         <div class="step-1">
           <h4>Step: 1</h4>
           <code>
-           <!-- <pre> -->
-            @NgModule({<br>
-              ...<br>
-              schemas: [ CUSTOM_ELEMENTS_SCHEMA ]<br>
-            })
-            <!-- </pre>  -->
-          </code>
+               <!-- <pre> -->
+                @NgModule({<br>
+                  ...<br>
+                  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]<br>
+                })
+                <!-- </pre>  -->
+              </code>
         </div>
 
         <div class="step-2">
           <h4>Step: 2</h4>
           <p>Then you need to insert astrid-web.js inside your html body,</p>
           <code>
-            <!-- <pre> -->
-              &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
-            <!-- </pre> -->
-          </code>
+                <!-- <pre> -->
+                  &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
+                <!-- </pre> -->
+              </code>
         </div>
 
         <div class="step-3">
           <h4>Step: 3</h4>
           <p>and then you need to put below tag to the page where you want to show your astrird.</p>
           <code>
-            <!-- <pre> -->
-              &lt;astrid>&lt;/astrid>
-            <!-- </pre> -->
-          </code>
+                <!-- <pre> -->
+                  &lt;astrid>&lt;/astrid>
+                <!-- </pre> -->
+              </code>
         </div>
       </div>
     </div>
 
-    <!-- Pagination -->
-    <div class="w3-center w3-padding-32">
-      <div class="w3-bar">
-      </div>
-    </div>
-
-    <!-- Images of Me -->
-    <!-- <div class="w3-row-padding w3-padding-16 img-cnt" id="about">
-      <div class="w3-col m6">
-        <img class="icons" src="./images/icons/speech-icon.png" alt="Me">
-      </div>
-      <div class="w3-col m6">
-        <img class="icons" src="./images/icons/rec.png" alt="Me">
-      </div>
-    </div> -->
-
-    <div class="w3-row-padding" id="feature">
-      <h2>Features</h2>
-      <di class="feature-img-cnt">
-        <img src="./images/features.JPG" alt="">
-      </di>
-    </div>
-
-
-    <div class="w3-container w3-padding-large" style="margin-bottom:32px">
-      <h4><b>About Me</b></h4>
-      <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem
-        ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum.
-        Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt
-        sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non
-        fringilla.</p>
-      <hr>
-
-      <h4>Technical Skills</h4>
-      <!-- Progress bars / Skills -->
-      <p>Speech</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:95%">95%</div>
-      </div>
-      <p>Design</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:85%">85%</div>
-      </div>
-      <p>Usage</p>
-      <div class="w3-grey">
-        <div class="w3-container w3-dark-grey w3-padding w3-center" style="width:80%">80%</div>
-      </div>
-      <p>
-
-      </p>
-      <hr>
-
-      <h4>How to use</h4>
-      <div class="main">
-        <ul class="cards">
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/speech-icon.png"
-                  alt="A side view of a plate of figs and berries. "></div>
-              <div class="card_content">
-                <h2 class="card_title">Testing tool</h2>
-                <div class="card_text">
-                  <p><span class="note">Seasonal.</span></p>
-                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
-                    refreshing, shareable dessert.</p>
-                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
-                </div>
+    <!-- About us -->
+    <div class="w3-container w3-padding-large" style="margin-bottom:32px" id="controls">
+      <h2>Controls</h2>
+      <h3>Icon controls</h3>
+      <div class="controls-cnt">
+        <div class="a-box">
+          <div class="img-container">
+            <div class="img-inner">
+              <div class="inner-skew">
+                <img src="./images/icons/play.png">
               </div>
             </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/rec.png"
-                  alt="A side view of a plate of figs and berries. "></div>
-              <div class="card_content">
-                <h2 class="card_title">Testing tool</h2>
-                <div class="card_text">
-                  <p><span class="note">Seasonal.</span></p>
-                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
-                    refreshing, shareable dessert.</p>
-                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
-                </div>
-              </div>
+          </div>
+          <div class="text-container">
+            <h3>Start</h3>
+            <div>
+              This a demo experiment to skew image container. It looks good.
             </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/play.png" alt="mixed vegetable salad in a mason jar. ">
-              </div>
-              <div class="card_content">
-                <h2 class="card_title">Play</h2>
-                <div class="card_text">
-                  <p>Dig into the freshest veggies of the season! This salad-in-a-jar features a mixture of leafy greens
-                    and seasonal vegetables, fresh from the farmer's market.</p>
-                  <p>Served with your choice of dressing on the side: housemade ranch, cherry balsamic vinaigrette,
-                    creamy chipotle, avocado green goddess, or honey mustard. Add your choice of protein for $2 more.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </li>
+          </div>
+        </div>
 
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/stop.png" alt="a Reuben sandwich on wax paper. "></div>
-              <div class="card_content">
-                <h2 class="card_title">Stop</h2>
-                <div class="card_text">
-                  <p> </p>
-                  <p>Every element of this </p>
-                  <p></p>
-                </div>
+        <div class="a-box">
+          <div class="img-container">
+            <div class="img-inner">
+              <div class="inner-skew">
+                <img src="./images/icons/stop.png">
               </div>
             </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/microphone.png"
-                  alt="A side view of a plate of figs and berries. "></div>
-              <div class="card_content">
-                <h2 class="card_title">Testing tool</h2>
-                <div class="card_text">
-                  <p><span class="note">Seasonal.</span></p>
-                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
-                    refreshing, shareable dessert.</p>
-                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
-                </div>
-              </div>
+          </div>
+          <div class="text-container">
+            <h3>Stop</h3>
+            <div>
+              This a demo experiment to skew image container. It looks good.
             </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/setting.png"
-                  alt="A side view of a plate of figs and berries. "></div>
-              <div class="card_content">
-                <h2 class="card_title">Testing tool</h2>
-                <div class="card_text">
-                  <p><span class="note">Seasonal.</span></p>
-                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
-                    refreshing, shareable dessert.</p>
-                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li class="cards_item">
-            <div class="card">
-              <div class="card_image"><img src="./images/icons/info.png"
-                  alt="A side view of a plate of figs and berries. "></div>
-              <div class="card_content">
-                <h2 class="card_title">Testing tool</h2>
-                <div class="card_text">
-                  <p><span class="note">Seasonal.</span></p>
-                  <p>A succulent sextet of fresh figs join with a selection of bodacious seasonal berries in this
-                    refreshing, shareable dessert.</p>
-                  <p>Choose your drizzle: cherry-balsamic vinegar, local honey, or housemade chocolate sauce. </p>
-                </div>
-              </div>
-            </div>
-          </li>
+          </div>
+        </div>
 
-        </ul>
+        <div class="a-box">
+          <div class="img-container">
+            <div class="img-inner">
+              <div class="inner-skew">
+                <img src="./images/icons/microphone.png">
+              </div>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>Recognition testing tool</h3>
+            <div>
+              This a demo experiment to skew image container. It looks good.
+            </div>
+          </div>
+        </div>
+
+        <div class="a-box">
+          <div class="img-container">
+            <div class="img-inner">
+              <div class="inner-skew">
+                <img src="./images/icons/setting.png">
+              </div>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>Settings</h3>
+            <div>
+              This a demo experiment to skew image container. It looks good.
+            </div>
+          </div>
+        </div>
+
+
+        <div class="a-box">
+          <div class="img-container">
+            <div class="img-inner">
+              <div class="inner-skew">
+                <img src="./images/icons/info.png">
+              </div>
+            </div>
+          </div>
+          <div class="text-container">
+            <h3>Info</h3>
+            <div>
+              This a demo experiment to skew image container. It looks good.
+            </div>
+          </div>
+        </div>
+
       </div>
+      <h3>Keyboard shortcuts</h3>
+      <p><kbd>Esc</kbd> : To <b>start / stop</b> the astrid</p>
+      <p><kbd>Tab</kbd> : Move to next input field</p>
+      <p><kbd>Shift</kbd> + <kbd>Tab</kbd> : Move to previous input field</p>
     </div>
 
     <!-- Contact Section -->
-    <div class="w3-container w3-padding-large w3-grey">
+    <div class="w3-container w3-padding-large w3-grey" id="contactus">
       <h4 id="contact"><b>Contact us</b></h4>
       <hr class="w3-opacity">
       <form action="/action_page.php" target="_blank">
@@ -311,11 +250,13 @@
         <h3>Whatuni incendio</h3>
         <hr>
         <div class="w3-third">
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue
+          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
+            ultricies
+            congue
             gravida diam non fringilla.</p>
         </div>
 
-        <div class="w3-third">
+        <!-- <div class="w3-third">
           <ul class="w3-ul w3-hoverable">
             <li class="w3-padding-16">
               <img src="" class="w3-left w3-margin-right" style="width:50px">
@@ -328,7 +269,7 @@
               <span>Praes tinci sed</span>
             </li>
           </ul>
-        </div>
+        </div> -->
 
         <div class="w3-third">
           <p>
