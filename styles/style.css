@@ -51,12 +51,17 @@ code {
     border-radius: 10px;
     align-items: center;
     /* text-align: center; */
-    padding: 18px 0 0 0;
+    padding: 18px;
 }
 
 pre {
     align-items: center;
 
+}
+
+
+.feature-img-cnt img {
+    width: 100%;
 }
 
 .icons {
