@@ -257,3 +257,28 @@ html {
     align-items     : center;
     text-align      : center;
 }
+
+#features .feature-lsit {
+    margin: 30px;
+ }
+
+ #features ul {
+    list-style-type: 1;
+ }
+
+
+ #features .feature-lsit ul {
+    list-style: none;
+    margin-left: 30px;
+ }
+
+ .sub-heading{
+    margin: 0!important;
+    padding-top: 0!important;
+ }
+
+ /* hr{
+    height: 1px;
+    width: 40%;
+    background-color: gray;
+ } */
