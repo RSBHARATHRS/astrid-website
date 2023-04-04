@@ -266,6 +266,10 @@ html {
     list-style-type: 1;
  }
 
+ ol li {
+    font-style: bold;
+ }
+
 
  #features .feature-lsit ul {
     list-style: none;
@@ -276,9 +280,3 @@ html {
     margin: 0!important;
     padding-top: 0!important;
  }
-
- /* hr{
-    height: 1px;
-    width: 40%;
-    background-color: gray;
- } */
