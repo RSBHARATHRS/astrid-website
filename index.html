@@ -107,11 +107,20 @@
             90 - 95% of accuracy in transcription. It can be able for on-the-fly transcription. </li>
         </ul>
         <li><b>Cost Effective</b></li>
-        <ul><li>As Astrid is integrated with an open-source module. It provides a lower operational cost (zero cost). </li></ul>
+        <ul>
+          <li>As Astrid is integrated with an open-source module. It provides a lower operational cost (zero cost).
+          </li>
+        </ul>
         <li><b>Muti-type Form Fields</b></li>
-        <ul><li>Astrid can select an option from the different types of fields in the form. Here is the list of fields available in the form: </li></ul>
+        <ul>
+          <li>Astrid can select an option from the different types of fields in the form. Here is the list of fields
+            available in the form: </li>
+        </ul>
         <li><b>Performance</b></li>
-        <ul><li>As Astrid transcripts the audio data into the text without the delay. It can be able to provide good performance in the less time. </li></ul>
+        <ul>
+          <li>As Astrid transcripts the audio data into the text without the delay. It can be able to provide good
+            performance in the less time. </li>
+        </ul>
       </ol>
     </div>
 
@@ -129,39 +138,79 @@
         event handler.
       </p>
 
-      <div class="ins-steps">
-        <div class="step-1">
-          <h4>Step: 1</h4>
-          <code>
-               <!-- <pre> -->
-                @NgModule({<br>
-                  ...<br>
-                  schemas: [ CUSTOM_ELEMENTS_SCHEMA ]<br>
-                })
-                <!-- </pre>  -->
-              </code>
-        </div>
 
-        <div class="step-2">
-          <h4>Step: 2</h4>
-          <p>Then you need to insert astrid-web.js inside your html body,</p>
-          <code>
-                <!-- <pre> -->
-                  &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
-                <!-- </pre> -->
-              </code>
-        </div>
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button" onclick="openCity('London')">HTML</button>
+        <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Angular</button>
+        <!-- <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button> -->
+      </div>
 
-        <div class="step-3">
-          <h4>Step: 3</h4>
-          <p>and then you need to put below tag to the page where you want to show your astrird.</p>
-          <code>
-                <!-- <pre> -->
-                  &lt;astrid>&lt;/astrid>
-                <!-- </pre> -->
-              </code>
+      <div id="London" class="w3-container city">
+        <div class="ins-steps">
+          <div class="step-2">
+            <h4>Step: 1</h4>
+            <p>Then you need to insert astrid-web.js inside your html body,</p>
+            <code>
+                    &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
+                </code>
+          </div>
+
+          <div class="step-3">
+            <h4>Step: 2</h4>
+            <p>and then you need to put below tag to the page where you want to show your astrird.</p>
+            <code>
+                    &lt;astrid>&lt;/astrid>
+                </code>
+          </div>
         </div>
       </div>
+
+      <div id="Paris" class="w3-container city" style="display:none">
+
+        <div class="ins-steps">
+          <div class="step-1">
+            <h4>Step: 1</h4>
+            <code>
+                 <!-- <pre> -->
+                  @NgModule({<br>
+                    ...<br>
+                    schemas: [ CUSTOM_ELEMENTS_SCHEMA ]<br>
+                  })
+                  <!-- </pre>  -->
+                </code>
+          </div>
+
+          <div class="step-2">
+            <h4>Step: 2</h4>
+            <p>Then you need to insert astrid-web.js inside your html body,</p>
+            <code>
+                  <!-- <pre> -->
+                    &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
+                  <!-- </pre> -->
+                </code>
+          </div>
+
+          <div class="step-3">
+            <h4>Step: 3</h4>
+            <p>and then you need to put below tag to the page where you want to show your astrird.</p>
+            <code>
+                  <!-- <pre> -->
+                    &lt;astrid>&lt;/astrid>
+                  <!-- </pre> -->
+                </code>
+          </div>
+        </div>
+      </div>
+
+      <div id="Tokyo" class="w3-container city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+
+
+
+
     </div>
 
     <!-- About us -->
@@ -180,7 +229,7 @@
           <div class="text-container">
             <h3>Start</h3>
             <div>
-              This a demo experiment to skew image container. It looks good.
+              Start key turn on the mic in the microphone. So user can able to answer the questions in the form orally.
             </div>
           </div>
         </div>
@@ -196,7 +245,7 @@
           <div class="text-container">
             <h3>Stop</h3>
             <div>
-              This a demo experiment to skew image container. It looks good.
+              Stop key helps to turn off the mic in the microphone once the user answered the question.
             </div>
           </div>
         </div>
@@ -212,7 +261,7 @@
           <div class="text-container">
             <h3>Recognition testing tool</h3>
             <div>
-              This a demo experiment to skew image container. It looks good.
+              Testing tool enables the user to test the mic and recognition model before form filling with their preferrable language.
             </div>
           </div>
         </div>
@@ -228,7 +277,7 @@
           <div class="text-container">
             <h3>Settings</h3>
             <div>
-              This a demo experiment to skew image container. It looks good.
+              The purpose of the setting section is for user customization. User can able to customize icon, select the preferrable language, etc.,
             </div>
           </div>
         </div>
@@ -245,7 +294,7 @@
           <div class="text-container">
             <h3>Info</h3>
             <div>
-              This a demo experiment to skew image container. It looks good.
+              This module contains the information about our Astrid plugin
             </div>
           </div>
         </div>
@@ -285,10 +334,7 @@
         <h3>Whatuni incendio</h3>
         <hr>
         <div class="w3-third">
-          <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-            ultricies
-            congue
-            gravida diam non fringilla.</p>
+          <p></p>
         </div>
 
         <!-- <div class="w3-third">
