@@ -83,8 +83,9 @@ code {
     /* margin: -35px 0px 0px -70px; */
 }
 
-.img-container img:hover {
-    size: scale(1);
+.a-box:hover .img-container{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out;
 }
 
 .inner-skew {
@@ -120,7 +121,7 @@ code {
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: white;
+    /* background-color: white; */
 }
 
 .feature-img-cnt img {
@@ -144,6 +145,13 @@ kbd {
 @media screen and (min-width: 666px) and (max-width: 2000px) {
     .feature-img-cnt img {
         width: 40%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 996px) and (max-width: 1400px) {
+    .feature-img-cnt img {
+        width: 60%;
         margin: 0 auto;
     }
 }
@@ -248,10 +256,8 @@ html {
     font-size: 15px;
 }
 
-
-
 #feature .img-cnt {
-    background-color: white;
+    /* background-color: white; */
     display         : flex;
     justify-content : center;
     align-items     : center;
