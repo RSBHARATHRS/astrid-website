@@ -8,12 +8,12 @@ function closeNav() {
   document.getElementById("myOverlay").style.display = "none";
 }
 
-function openCity(cityName) {
+function openInsTech(techName) {
   var i;
-  var x = document.getElementsByClassName("city");
+  var x = document.getElementsByClassName("tech");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";  
   }
-  document.getElementById(cityName).style.display = "block";  
+  document.getElementById(techName).style.display = "block";  
 }
 

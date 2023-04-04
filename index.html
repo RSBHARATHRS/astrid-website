@@ -140,12 +140,12 @@
 
 
       <div class="w3-bar w3-black">
-        <button class="w3-bar-item w3-button" onclick="openCity('London')">HTML</button>
-        <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Angular</button>
+        <button class="w3-bar-item w3-button" onclick="openInsTech('html')">HTML</button>
+        <button class="w3-bar-item w3-button" onclick="openInsTech('angular')">Angular</button>
         <!-- <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button> -->
       </div>
 
-      <div id="London" class="w3-container city">
+      <div id="html" class="w3-container tech">
         <div class="ins-steps">
           <div class="step-2">
             <h4>Step: 1</h4>
@@ -165,18 +165,16 @@
         </div>
       </div>
 
-      <div id="Paris" class="w3-container city" style="display:none">
+      <div id="angular" class="w3-container tech" style="display:none">
 
         <div class="ins-steps">
           <div class="step-1">
             <h4>Step: 1</h4>
             <code>
-                 <!-- <pre> -->
                   @NgModule({<br>
                     ...<br>
                     schemas: [ CUSTOM_ELEMENTS_SCHEMA ]<br>
                   })
-                  <!-- </pre>  -->
                 </code>
           </div>
 
@@ -184,9 +182,7 @@
             <h4>Step: 2</h4>
             <p>Then you need to insert astrid-web.js inside your html body,</p>
             <code>
-                  <!-- <pre> -->
                     &lt;script src="https://web-astrid.io/v2/astrid-web.js"> &lt;/script>
-                  <!-- </pre> -->
                 </code>
           </div>
 
@@ -194,20 +190,16 @@
             <h4>Step: 3</h4>
             <p>and then you need to put below tag to the page where you want to show your astrird.</p>
             <code>
-                  <!-- <pre> -->
                     &lt;astrid>&lt;/astrid>
-                  <!-- </pre> -->
                 </code>
           </div>
         </div>
       </div>
-
-      <div id="Tokyo" class="w3-container city" style="display:none">
+<!-- 
+      <div id="Tokyo" class="w3-container tech" style="display:none">
         <h2>Tokyo</h2>
         <p>Tokyo is the capital of Japan.</p>
-      </div>
-
-
+      </div> -->
 
 
 
